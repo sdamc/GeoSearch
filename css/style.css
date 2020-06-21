@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {    
+    font-size: 62,5%;
+    font-family: 'Roboto Slab', Verdana, Arial, serif;
+    background-color: #f8f8ff;
+}
+
+/* #### Navbar #####*/
+
+.navbar {
+    background-color: #033F63;
+    padding: 0.1rem;
+}
+
+.nav-font {
+    color: #f8f8ff;
+}
+
+/*### Carousel Controls ###*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: black;
+}
+
+/*###Fonts###*/
+
+h1 {
+    color: #033F63;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: .2rem .2rem rgba(0, 0, 0, .2);
+}
+
+h2 {
+    color:#28666E;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h3 {
+    color:#7C9885;
+    font-size: 1.9rem;
+}
+
+h4 {
+    color:#B5B682;
+    font-size: 1.6rem;
+}
+
+h5 {
+    color: #FEDC97;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: #033F63;
+    padding: 1rem;
+    color: #f8f8ff;
+}
