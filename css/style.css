@@ -1,78 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 body {    
     font-size: 62,5%;
     font-family: 'Roboto Slab', Verdana, Arial, serif;
     background-color: #f8f8ff;
+}*/
+
+#food {
+    width: 95%;
 }
 
-/* #### Navbar #####*/
-
-.navbar {
-    background-color: #033F63;
-    padding: 0.1rem;
+#container {
+    margin: 5px;
 }
 
-.nav-font {
-    color: #f8f8ff;
+.beer {
+    border: 1px solid black;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8ff;
+    -webkit-box-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    box-shadow: 10px 13px 30px -19px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-between;
+
 }
 
-/*### Carousel Controls ###*/
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-image: none;
+.beerImage {
+    padding: 10px;
+    width: 50px;
+    order: 1;
+
 }
 
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-size: 55px;
-  color: black;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: black;
-}
-
-/*###Fonts###*/
-
-h1 {
-    color: #033F63;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: .2rem .2rem rgba(0, 0, 0, .2);
-}
-
-h2 {
-    color:#28666E;
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
-h3 {
-    color:#7C9885;
-    font-size: 1.9rem;
-}
-
-h4 {
-    color:#B5B682;
-    font-size: 1.6rem;
-}
-
-h5 {
-    color: #FEDC97;
-    font-size: 1.3rem;
-}
-
-footer {
-    background-color: #033F63;
-    padding: 1rem;
-    color: #f8f8ff;
+.beerImage img{
+    width: 60px;
 }
