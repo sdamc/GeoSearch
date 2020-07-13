@@ -42,15 +42,18 @@ const wineSearch = document.getElementById('wineSearch');
 const wineTxt = document.getElementById('wine');
 const resultWine = document.getElementById('wine_result');
 let outWine = "";
+let modeFetch = {
+    
+    mode: 'no-cors'
+};
 
 wineSearch.onclick = function(){
     var searchTerm = wineTxt.value;
-    const url = `https://api.globalwinescore.com/globalwinescores/latest=${searchTerm}`;
-    fetch(url, {
-        mode: 'no-cors'
-    })
+    const url = `https://api.globalwinescore.com/globalwinescores/latest/?wine_id=&vintage=2000&color=&is_primeurs=&lwin=1014033&lwin_11=10140332000&limit=100&offset=100&ordering=-date=${searchTerm}`;
+    fetch(url, modeFetch)
+    
     var myHeaders = new Headers();
-    myHeaders.append("Authorization", "Token {f16aaf0eba63dc50268bae7bff67bcca58a82407}")
+    myHeaders.append("Authorization", "Token {e5e17f36e4527d34d94f980a86d28c28ef8aa363}")
     .then(data => data.json())
     .then(jsonObject => {
         console.log(jsonObject);
