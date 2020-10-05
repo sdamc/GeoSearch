@@ -4,28 +4,25 @@
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Using Fetch</title>
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
-        <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
         <link href="css/style.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">         
     </head>
     <body>    
-        <ons-page>
-        <ons-toolbar>
-            <div class="center">Beer Pairings</div>
-        </ons-toolbar>
-        <section id="container">
-            <p><ons-input id="food" modifier="underbar" placeholder="Food to Pair"></ons-input></p>
-            <p><ons-button id="btnSearch" modifier="large">Search</ons-button></p>
-            <div id="result"></div>
-            <p><ons-input id="wine" modifier="underbar" placeholder="Wine"></ons-input></p>
-            <p><ons-button id="wineSearch" modifier="large">Search</ons-button></p>
-            <div id="wine_result"></div>
-        </section>       
-        </ons-page>
+        <section>
+            <div class="container">
+                <form>
+                    <input type="number" placeholder="Enter a number">
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="number-fact">Give a number and i will tell you a interesting fact.</div>        
+            </div>
+        </section> 
+        <section>
+            <div class="container">
+                <button class="jokeBTN" type="submit">Submit</button>
+                <div class="dad-joke">Click to get a dad joke here.</div>        
+            </div>
+        </section>               
         <script src="js/script.js"></script>
-        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     </body>
 </html>
