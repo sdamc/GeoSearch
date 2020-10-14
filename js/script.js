@@ -29,3 +29,14 @@ function getJoke(){
     }).then (data => data.json())
     .then(b => dadJoke.innerHTML = b.joke)
 }
+
+const geekBTN = document.querySelector('.geekBTN');
+const geekJoke = document.querySelector('.geek-joke');
+document.addEventListener('DOMContentLoaded', getGeekJoke);
+
+geekBTN.addEventListener('click', getGeekJoke);
+function getGeekJoke(){
+    fetch ('https://geek-jokes.sameerkumar.website/api')
+    .then (data => data.json())    
+    .then(c => getGeekJoke.innerHTML = data)
+}
